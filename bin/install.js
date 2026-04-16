@@ -3,6 +3,22 @@
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const { execSync } = require('child_process');
+
+// Check for Python 3
+try {
+  const version = execSync('python3 --version 2>&1 || python --version 2>&1', { encoding: 'utf8' }).trim();
+  const match = version.match(/Python (\d+)/);
+  if (!match || parseInt(match[1]) < 3) {
+    console.error(`\nError: Python 3 is required but not found (got: ${version}).`);
+    console.error('Install it at https://python.org and re-run.\n');
+    process.exit(1);
+  }
+} catch {
+  console.error('\nError: Python 3 is required but not found.');
+  console.error('Install it at https://python.org and re-run.\n');
+  process.exit(1);
+}
 
 const home = os.homedir();
 const skillsDir = path.join(home, '.claude', 'skills');

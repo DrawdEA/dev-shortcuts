@@ -68,11 +68,23 @@ Pre-release codebase audit. Runs in this order:
 
 **Prerequisites:** [Claude Code](https://code.claude.com) (Pro, Max, Team, or Enterprise), Node.js, Python 3.x
 
+### Option 1 — npx (recommended)
+
 ```bash
 npx github:DrawdEA/dev-shortcuts
 ```
 
-Works on Mac, Linux, and Windows. Copies all skills to `~/.claude/skills/`.
+Works on Mac, Linux, and Windows. No git clone needed.
+
+### Option 2 — git clone
+
+```bash
+git clone https://github.com/DrawdEA/dev-shortcuts.git
+cd dev-shortcuts
+node bin/install.js
+```
+
+Good if you want to inspect or modify the skills before installing.
 
 ### Verify
 
