@@ -12,13 +12,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install ffmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg ttyd
+
+      - name: Install VHS
+        run: |
+          curl -sLO https://github.com/charmbracelet/vhs/releases/latest/download/vhs_Linux_x86_64.tar.gz
+          tar -xzf vhs_Linux_x86_64.tar.gz
+          sudo mv vhs /usr/local/bin/
 
       - name: Generate GIF
-        uses: charmbracelet/vhs-action@v2
-        with:
-          path: demo.tape
+        run: vhs demo.tape
 
       - name: Commit GIF
         uses: stefanzweifel/git-auto-commit-action@v5
