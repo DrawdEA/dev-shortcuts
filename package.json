@@ -1,0 +1,20 @@
+{
+  "name": "dev-shortcuts",
+  "version": "1.0.0",
+  "description": "Claude Code skills for agentic engineers — install once, use on every project",
+  "bin": {
+    "dev-shortcuts": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "sanity-check/",
+    "stack-check/",
+    "ship-check/"
+  ],
+  "keywords": ["claude", "claude-code", "skills", "ai", "developer-tools"],
+  "author": "DrawdEA",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

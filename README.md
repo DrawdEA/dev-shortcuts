@@ -65,48 +65,13 @@ Pre-release codebase audit. Runs in this order:
 
 ## Install
 
-### Prerequisites
-- [Claude Code](https://code.claude.com) — Pro, Max, Team, or Enterprise
-- Python 3.x
-- Node.js + npm
+**Prerequisites:** [Claude Code](https://code.claude.com) (Pro, Max, Team, or Enterprise), Node.js, Python 3.x
 
-### Mac/Linux
 ```bash
-git clone https://github.com/DrawdEA/dev-shortcuts.git
-
-mkdir -p ~/.claude/skills/sanity-check/scripts
-mkdir -p ~/.claude/skills/stack-check
-mkdir -p ~/.claude/skills/ship-check/scripts
-
-cp dev-shortcuts/sanity-check/SKILL.md ~/.claude/skills/sanity-check/SKILL.md
-cp dev-shortcuts/sanity-check/scripts/scan_deps.py ~/.claude/skills/sanity-check/scripts/scan_deps.py
-
-cp dev-shortcuts/stack-check/SKILL.md ~/.claude/skills/stack-check/SKILL.md
-
-cp dev-shortcuts/ship-check/SKILL.md ~/.claude/skills/ship-check/SKILL.md
-cp dev-shortcuts/ship-check/scripts/audit.py ~/.claude/skills/ship-check/scripts/audit.py
-cp dev-shortcuts/ship-check/scripts/fixer.py ~/.claude/skills/ship-check/scripts/fixer.py
-cp dev-shortcuts/ship-check/scripts/build_check.py ~/.claude/skills/ship-check/scripts/build_check.py
+npx github:DrawdEA/dev-shortcuts
 ```
 
-### Windows (PowerShell)
-```powershell
-git clone https://github.com/DrawdEA/dev-shortcuts.git
-
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\sanity-check\scripts"
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\stack-check"
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\ship-check\scripts"
-
-Copy-Item "dev-shortcuts\sanity-check\SKILL.md" "$env:USERPROFILE\.claude\skills\sanity-check\SKILL.md"
-Copy-Item "dev-shortcuts\sanity-check\scripts\scan_deps.py" "$env:USERPROFILE\.claude\skills\sanity-check\scripts\scan_deps.py"
-
-Copy-Item "dev-shortcuts\stack-check\SKILL.md" "$env:USERPROFILE\.claude\skills\stack-check\SKILL.md"
-
-Copy-Item "dev-shortcuts\ship-check\SKILL.md" "$env:USERPROFILE\.claude\skills\ship-check\SKILL.md"
-Copy-Item "dev-shortcuts\ship-check\scripts\audit.py" "$env:USERPROFILE\.claude\skills\ship-check\scripts\audit.py"
-Copy-Item "dev-shortcuts\ship-check\scripts\fixer.py" "$env:USERPROFILE\.claude\skills\ship-check\scripts\fixer.py"
-Copy-Item "dev-shortcuts\ship-check\scripts\build_check.py" "$env:USERPROFILE\.claude\skills\ship-check\scripts\build_check.py"
-```
+Works on Mac, Linux, and Windows. Copies all skills to `~/.claude/skills/`.
 
 ### Verify
 
