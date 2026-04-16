@@ -17,10 +17,11 @@ Checks if an npm package or pattern is still worth using.
 - Full dep scan mode: scores your entire `package.json` for AI coding compatibility
 
 ```
-/sanity-check axios
-/sanity-check moment
-/sanity-check --scan                      ← audit entire package.json
-/sanity-check axios zod react-query       ← multiple at once
+/sanity-check axios                               ← is this package still worth using?
+/sanity-check moment                              ← deprecated? better alternatives?
+/sanity-check "next.js current implementation"   ← patterns and approaches, not just packages
+/sanity-check --scan                              ← audit entire package.json
+/sanity-check axios zod react-query               ← multiple at once
 ```
 
 ---
