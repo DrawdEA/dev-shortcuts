@@ -76,15 +76,7 @@ npx github:DrawdEA/dev-shortcuts
 
 Works on Mac, Linux, and Windows. No git clone needed.
 
-### Option 2 — skills CLI
-
-Uses the [open agent skills ecosystem](https://github.com/vercel-labs/skills). Works with Claude Code, Cursor, Cline, and 45+ other agents.
-
-```bash
-npx skills add DrawdEA/dev-shortcuts -a claude-code -g
-```
-
-### Option 3 — git clone
+### Option 2 — git clone
 
 ```bash
 git clone https://github.com/DrawdEA/dev-shortcuts.git

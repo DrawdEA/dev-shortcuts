@@ -1,0 +1,24 @@
+name: Generate Demo GIF
+
+on:
+  push:
+    paths:
+      - demo.tape
+  workflow_dispatch:
+
+jobs:
+  vhs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate GIF
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: demo.tape
+
+      - name: Commit GIF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update demo.gif"
+          file_pattern: "*.gif"

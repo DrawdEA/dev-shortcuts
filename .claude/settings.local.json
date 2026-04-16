@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl --list --verbose)",
+      "Bash(docker --version)",
+      "Bash(docker run *)"
+    ]
+  }
+}

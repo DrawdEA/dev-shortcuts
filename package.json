@@ -11,10 +11,19 @@
     "stack-check/",
     "ship-check/"
   ],
-  "keywords": ["claude", "claude-code", "skills", "ai", "developer-tools"],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skills",
+    "ai",
+    "developer-tools"
+  ],
   "author": "DrawdEA",
   "license": "MIT",
   "engines": {
     "node": ">=14"
+  },
+  "dependencies": {
+    "vhs": "^0.2.0"
   }
 }
