@@ -1,6 +1,6 @@
 # dev-shortcuts
 
-A collection of Claude Code skills for JS/TS developers. Install once, use on every project.
+A collection of Claude Code skills for agentic engineers. Install once, use on every project.
 
 Built for developers who vibe code with Claude and need guardrails before they ship.
 
