@@ -9,7 +9,7 @@ Built for developers who vibe code with Claude and need guardrails before they s
 ## Skills
 
 ### `/sanity-check`
-Checks if an npm package or pattern is still worth using.
+Checks if an npm package or pattern is still worth using. Takes into account the opinions of the community. A smarter linter, essentially.
 
 - Hits the npm registry and GitHub live — not training data
 - Checks version, maintenance status, deprecation flags, weekly downloads
@@ -27,7 +27,7 @@ Checks if an npm package or pattern is still worth using.
 ---
 
 ### `/stack-check`
-Reviews architectural decisions for soundness.
+Reviews architectural decisions for soundness. Useful when in doubt if what you're using is the best right now, depending on your use case. Very useful when you're learning as you go.
 
 Evaluates on four axes:
 - **Fit** — right tool for the job?
@@ -45,7 +45,7 @@ Covers RN/Expo mobile, Next.js/web, AI/LLM tooling, and backend/infra. Always ma
 ---
 
 ### `/ship-check`
-Pre-release codebase audit. Runs in this order:
+Pre-release codebase audit. Use when you're lazy to check after "generally" finishing your app. Runs in this order:
 
 1. **📋 CLAUDE.md** — reads your project's CLAUDE.md for known blockers and unresolved TODOs
 2. **🔍 Static analysis** — scans for secrets, console.logs, hardcoded values, localhost refs, ts-ignore abuse
