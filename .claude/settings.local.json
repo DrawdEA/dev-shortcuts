@@ -5,7 +5,11 @@
       "Bash(docker --version)",
       "Bash(docker run *)",
       "Bash(gh run *)",
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Read(//c/Users/Edward/.claude/skills/ship-check/scripts\" 2>/dev/**)",
+      "Read(//c/Users/Edward/.claude/skills/ship-check/scripts//**)",
+      "Bash(python \"/c/Users/Edward/.claude/skills/ship-check/scripts/audit.py\" \"/c/Users/Edward/Documents/Coding/repos/dev-shortcuts\")",
+      "Bash(python \"/c/Users/Edward/.claude/skills/ship-check/scripts/build_check.py\" \"/c/Users/Edward/Documents/Coding/repos/dev-shortcuts\")"
     ]
   }
 }

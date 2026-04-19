@@ -22,8 +22,5 @@
   "license": "MIT",
   "engines": {
     "node": ">=14"
-  },
-  "dependencies": {
-    "vhs": "^0.2.0"
   }
 }
