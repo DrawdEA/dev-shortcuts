@@ -18,7 +18,7 @@
     "ai",
     "developer-tools"
   ],
-  "author": "DrawdEA",
+  "author": "Edward Joshua Diesta <edwardjoshua.diesta@gmail.com> (https://github.com/DrawdEA)",
   "license": "MIT",
   "engines": {
     "node": ">=14"
